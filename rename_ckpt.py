@@ -8,7 +8,7 @@ var_dict = {
 'rnn_model/RNN/MultiRNNCell/Cell0/LSTMCell/B':'rnn_model/rnn/multi_rnn_cell/cell_0/lstm_cell/bias'
 }
 
-def rename(checkpoint_path, vardict, add_prefix, dry_run):
+def rename(checkpoint_path, var_dict, add_prefix, dry_run):
     reader = pywrap_tensorflow.NewCheckpointReader(checkpoint_path)
     var_to_shape_map = reader.get_variable_to_shape_map()
     with tf.Session() as sess:
