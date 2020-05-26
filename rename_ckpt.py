@@ -37,4 +37,4 @@ def rename(checkpoint_path, var_dict, add_prefix, dry_run):
             saver.save(sess, save_path=r'F:\magenta\test\\')
 #
 #
-rename(checkpoint_path, vardict=var_dict, add_prefix=None, dry_run=None)
+rename(checkpoint_path, var_dict, add_prefix=None, dry_run=None)
